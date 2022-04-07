@@ -1,0 +1,47 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/specialServices/electrical/electrical-img-01.jpg" alt="" class="cover-img">
+                    <h3 class="main-title">Electrical Density Gage in Field (EDG)</h3>
+                    <p>
+                        Compacted soil is a vital element in the construction and transportation industries of any civil engineering project.
+                    </p>
+                    <p>
+                        We offer in suite density tester Electrical Density Gage Test (EDG) as an alternative way that is capable of providing accurate readings for the moisture content, dry and wet density and compaction percent of soils used in road beds and foundations which can be used as a construction aid to monitor day-to-day compaction operations by providing performance and measurement results highly comparable to those achieved with traditional methods that control the process of soil compaction, including the sand-cone and oven moisture test combination.
+                    </p>
+                </div> <!-- /.service-content -->
+            </div> <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h3 class="title">Special Services</h3>
+                    <ul>
+                        @await Component.InvokeAsync("SpecialServices")
+                    </ul>
+                </div> <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div> <!-- /.sidebar-brochures -->
+
+            </div> <!-- /.theme-sidebar-one -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.service-details -->

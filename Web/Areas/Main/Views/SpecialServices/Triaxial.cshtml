@@ -1,0 +1,45 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/specialServices/triaxial/triaxial-img-01.jpg" alt="" class="cover-img">
+                    <h3 class="main-title">Triaxial Test  </h3>
+                    <p>
+                        We have state-of-the-art, TRIAXIAL and consolidation testing equipment in our Advanced Testing Laboratory that can be used to perform several types of consolidation tests by subjecting it to different drainage conditions.
+                    <p>
+                        Triaxial Testing of soil is an important aspect of construction which used to solve stability problems by determining the shear strength and stiffness of soil when holding reservoirs of water, and useful in pore water pressure measurement and in determining sandy soil’s contractive behavior, too.
+                    </p>
+                </div> <!-- /.service-content -->
+            </div> <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h3 class="title">Special Services</h3>
+                    <ul>
+                        @await Component.InvokeAsync("SpecialServices")
+                    </ul>
+                </div> <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div> <!-- /.sidebar-brochures -->
+            </div> <!-- /.theme-sidebar-one -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.service-details -->

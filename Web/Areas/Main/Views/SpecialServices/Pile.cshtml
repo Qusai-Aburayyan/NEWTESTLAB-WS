@@ -1,0 +1,49 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/specialServices/pile/pile-img-01.jpg" alt="" class="cover-img">
+                    <h3 class="main-title">Pile Integrity Testing </h3>
+                    <p>
+                        NEWTEST Provide Pile Integrity Tester (PIT) that gives peace of mind that a pile or shaft is free of major discontinuous reason of piles foundation such as (honeycomb, mud entrapment, fracture, hole and defects) prior to construction of the superstructure using stress wave along pile body by applying the excitation on the top of the pile with a convenient and fast operations.
+                    </p>
+                    <p>
+                        PIT is a non-destructive qualitative evaluation required by geotechnical engineers and contractors for concrete pile foundations to assess their physical dimension (length or cross section), Continuity and Consistency of pile material that can be changes in piles with cross section. The resulting defects can negatively impact the durability and mechanical performance of the pile so PIT is considered as an important test for your project foundation quality.
+                    </p>
+                </div> <!-- /.service-content -->
+            </div> <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h3 class="title">Special Services</h3>
+                    <ul>
+                        @await Component.InvokeAsync("SpecialServices")
+                    </ul>
+                </div> <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div> <!-- /.sidebar-brochures -->
+
+
+
+            </div> <!-- /.theme-sidebar-one -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.service-details -->

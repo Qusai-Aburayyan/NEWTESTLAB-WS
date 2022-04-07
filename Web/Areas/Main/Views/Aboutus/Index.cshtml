@@ -1,0 +1,99 @@
+﻿@model AboutusPageViewModel
+<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+    <div class="overlay">
+        <div class="container">
+            <h2>ABOUT</h2>
+        </div> <!-- /.container -->
+    </div> <!-- /.overlay -->
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    CallOut Banner
+==============================================
+-->
+<div class="callout-banner no-bg">
+    <div class="container clearfix">
+        <h3 class="title">Our-Vision <br> and Mission</h3>
+        <p>@Model.Aboutus.VisionMissionText</p>
+        <a href="#" class="theme-button-one">CONTACT US</a>
+    </div>
+</div> <!-- /.callout-banner -->
+<!--
+=============================================
+    About Company Stye Two
+==============================================
+-->
+<div class="about-compnay-two no-bg section-spacing">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 text order-lg-last">
+                    <div class="theme-title-one">
+                        <h2>SHORT HISTORY</h2>
+                    </div> <!-- /.theme-title-one -->
+                    <p>@Model.Aboutus.Para1</p>
+                    <p>@Model.Aboutus.Para2</p>
+                </div> <!-- /.col- -->
+                <div class="col-lg-6 col-12 order-lg-first">
+                    <img src="~/images/aboutus/@Model.Aboutus.ImageURL" alt="" class="left-img">
+                </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.overlay -->
+</div> <!-- /.about-compnay-two -->
+<!--
+=====================================================
+    Quality Policy
+=====================================================
+-->
+<div class="quality section-spacing">
+    <div class="container">
+        <div class="theme-title-one">
+            <h2>Quality Policy</h2>
+        </div>
+        <div class="text" style="text-align: left;">
+            <p>It is the policy of NEWTEST Laboratory provides our customer with services and technical support that meet and exceed their quality requirements and expectation. In order to achieve this, we will strive to: </p>
+            <ul>
+                @foreach (var QpPoint in Model.QualityPolicies)
+                {
+                    <li><i class="bi bi-chevron-right"></i>@QpPoint.Point</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--
+=============================================
+    Certifications
+==============================================
+-->
+<div class="shop-page section-spacing">
+    <div class="container">
+        <div style="margin-bottom: 30px;" class="theme-title-one">
+            <h2>Certifications</h2>
+        </div>
+        <div class="row">
+            @foreach (var Certificate in Model.Certifications)
+            {
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="single-product">
+                        <div class="image-box">
+                            <a href="~/images/aboutus/@Certificate.CertificationURL" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="~/images/aboutus/@Certificate.CertificationURL" alt=""></a>
+                        </div> <!-- /.image-box -->
+                        <div class="product-name">
+                            <h5><a href="shop-details.html">@Certificate.CertificationName</a></h5>
+                        </div>
+                    </div> <!-- /.single-product -->
+                </div> <!-- /.col- -->
+            }
+
+        </div> <!-- /.row- -->
+    </div> <!-- /.container -->
+</div> <!-- /.shop-page -->

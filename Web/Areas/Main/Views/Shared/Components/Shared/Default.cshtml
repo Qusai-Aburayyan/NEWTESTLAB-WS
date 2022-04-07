@@ -1,0 +1,21 @@
+﻿@model SharedViewModel
+
+    <div class="container parent clearfix">
+        <div class="logo">
+            <a asp-area="Main" asp-action="index" asp-controller="Home"><img src="~/images/home/webSetting/@Model.WebSettings.LogoURL" alt=""></a>
+        </div>
+        <div class="adress-wrapper">
+            <ul>
+                <li class="adress">
+                    <i class="icon flaticon-placeholder"></i>
+                    <h6>Address</h6>
+                    <p>@Model.WebSettings.Adress</p>
+                </li>
+                <li class="adress">
+                    <i class="icon flaticon-multimedia"></i>
+                    <h6>Mail us:</h6>
+                    <p>@Model.WebSettings.EmailAdress</p>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.container -->

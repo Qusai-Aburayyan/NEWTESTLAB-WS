@@ -1,0 +1,51 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/specialServices/ultrasonic/ultrasonic-img-01.jpg" alt="" class="cover-img">
+                    <h3 class="main-title">ULTRASONIC Testing for Concrete </h3>
+                    <p>
+                        We Perform the most advanced solutions for non-destructive evaluation of concrete strength to avoid further damage to an already struggling structure.
+                    <p>
+                        Ultrasonic testing of concrete is an effective way for quality assessment and uniformity that allow us to make an inspection and assessment of existing concrete structures, that can inform us about concrete strength, structural integrity, localization of defects and cracks depth and width estimations in concrete that cause a serious damages and collapses in the structure.
+                    </p>
+                    <p>
+                        In construction projects, switching to non-destructive means less intervention, shorter down-times, and saving money.
+                    </p>
+                </div> <!-- /.service-content -->
+            </div> <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h3 class="title">Special Services</h3>
+                    <ul>
+                        @await Component.InvokeAsync("SpecialServices")
+                    </ul>
+                </div> <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div> <!-- /.sidebar-brochures -->
+
+
+
+            </div> <!-- /.theme-sidebar-one -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.service-details -->

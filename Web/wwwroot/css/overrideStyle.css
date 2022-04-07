@@ -1,0 +1,458 @@
+/* CSS Document */
+
+/* 
+    Created on   : 23/05/2018.
+    Theme Name   : Charles-Business-Consulting HTML Template.
+    Version      : 1.0.
+    Author       : @CreativeGigs.
+    Developed by : Jubayer al hasan. (jubayer.hasan1991@gmail.com)
+   
+*/
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+/*   01 - Global stlye  */
+/*   02 - Theme Title  */
+/*   03 - Theme Pagination  */
+/*   04 - Theme Header One */
+/*   05 - Theme Header Two */
+/*   06 - Theme menu One  */
+/*   07 - Theme menu Two  */
+/*   08 - Theme Main Banner  */
+/*   09 - Top Feature  */
+/*   10 - About Company  */
+/*   11 - Feature Banner  */
+/*   12 - Service Style One  */
+/*   13 - Testimonial Slider  */
+/*   14 - Our Team   */
+/*   15 - Theme Counter  */
+/*   16 - Free Consultation  */
+/*   17 - Partner Slider  */
+/*   18 - Theme footer one  */
+/*   19 - Theme footer Two   */
+/*   20 - CallOut Banner */
+/*   21 - Our Solution  */
+/*   22 - About Company Stye Two  */
+/*   23 - Our Case  */
+/*   24 - Faq Section  */
+/*   25 - Why Choose us  */
+/*   26 - Short Banner  */
+/*   27 - Latest News  */
+/*   28 - Google Map   */
+/*   29 - Theme Inner Banner   */
+/*   30 - Why WE Best   */
+/*   31 - Core Values   */
+/*   32 - Theme Sidebar One   */
+/*   33 - Service Details   */
+/*   34 - Project Details   */
+/*   35 - Blog Sidebar   */
+/*   36 - Blog Details   */
+/*   37 - Contact Us   */
+/*   38 - Compnay Branch Address   */
+/*   39 - Shop Page   */
+
+/*** 
+
+====================================================================
+  Loading Transition
+====================================================================
+
+ ***/
+
+/*==================== Click Top ====================*/
+
+/*______________________ Global stlye ___________________*/
+:root {
+  --b-color-1: #36455e;
+  --b-color-2: #2a3a52;
+  --b-color-3: #0d2356;
+  --b-color-4: #001138;
+  --overly-color: rgba(0, 26, 87, 0.5);
+  --g-color-1: #ca9f5b;
+  --g-color-2: #c1a16c;
+}
+/*--------------------- Transition --------------------*/
+
+/*----------------------- Theme Color File -------------------*/
+
+/*----------------- Theme button ------------------*/
+
+/*------------------- Theme Title ------------------*/
+
+/*------------------- Theme Pagination ------------------*/
+
+/*--------------------------- Theme Header One  ---------------------*/
+@media(max-width:991px){
+  .header-one .theme-menu-wrapper .bg-wrapper{
+    height: 63px;
+  }
+}
+#theme-main-banner .camera_pag .camera_pag_ul li.cameracurrent > span {
+  background: var(--g-color-2);
+}
+#mega-menu-holder li > ul.dropdown {
+  min-width: 230px;
+}
+#mega-menu-holder > ul > li.active > a,
+#mega-menu-holder > ul > li:hover > .sub-toggle {
+  color: var(--g-color-2);
+}
+.header-one .theme-menu-wrapper .bg-wrapper {
+  background-color: var(--b-color-2);
+}
+@media (max-width: 767px) {
+  .header-one .top-header .parent .adress-wrapper {
+    display: none;
+  }
+  .header-one .logo {
+    width: 85%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-one .top-header .parent .adress-wrapper {
+    display: none;
+  }
+  .header-one .logo {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-one .top-header .parent .adress-wrapper {
+    display: none;
+  }
+  .header-one .logo {
+    width: 35%;
+    margin: auto;
+  }
+  .header-one .parent {
+    grid-template-rows: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .header-one .parent {
+    grid-template-columns: 1fr 55%;
+  }
+  .header-one .logo {
+    width: 60%;
+  }
+}
+.header-one .parent {
+  display: grid;
+  align-items: end;
+}
+.header-one .top-header .parent .adress-wrapper .adress {
+  position: relative;
+  margin-right: 20px;
+  padding: 0 20px 0 60px;
+  margin-bottom: 12px;
+}
+.header-one .top-header .parent .adress-wrapper ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.header-one .top-header .parent .adress-wrapper .icon {
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  color: var(--g-color-2);
+}
+
+/*--------------------------- Theme Header Two  ---------------------*/
+.header-two .top-header .social-icon li a:hover {
+  color: var(--g-color-2);
+}
+
+/*------------------------ Theme menu One --------------------*/
+.theme-menu-wrapper .right-widget .social-icon li a:hover {
+  color: var(--g-color-2);
+}
+.theme-menu-wrapper .right-widget .social-icon{
+    margin-right : 25px; 
+}
+.theme-menu-wrapper .right-widget .search-option {
+    border-left: 1px solid #4a4d57;
+}
+#mega-menu-holder > ul > li > a:hover {
+  color: var(--g-color-2);
+}
+
+/*------------------------ Theme menu Two --------------------*/
+
+/*================= Sticky Menu ======s=========*/
+.theme-menu-wrapper.fixed {
+  background-color: var(--b-color-2);
+}
+
+/*---------------------------- Theme Main Banner -------------------------*/
+#theme-main-banner .camera_caption p,
+#theme-main-banner .camera_caption h1 {
+  color: #dde0e6;
+}
+#theme-main-banner .camera_caption .theme-button-one {
+  background-color: var(--b-color-1);
+  color: #fff;
+}
+#theme-main-banner .camera_caption .theme-button-one:hover {
+  color: var(--g-color-2);
+  background-color: var(--b-color-4);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #theme-main-banner .image {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 300px) and (max-width: 415px) {
+  .camera_wrap img {
+    right: 90%;
+  }
+}
+@media (min-width: 415px) and (max-width: 600px) {
+  .camera_wrap img {
+    right: 60%;
+  }
+}
+@media (min-width: 600px) and (max-width: 991px) {
+  .camera_wrap img {
+    right: 30%;
+  }
+}
+
+/*--------------------- Top Feature -------------------*/
+
+/*------------------ About Company -----------------*/
+.about-compnay .about-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.quality p {
+  margin-bottom: 25px;
+}
+.quality .theme-title-one {
+  margin-bottom: 30px;
+}
+.quality .text ul {
+  padding-left: 24px;
+}
+.quality .text ul li {
+  line-height: 34px;
+  font-style: italic;
+  padding-left: 30px;
+  position: relative;
+}
+.quality .text ul li i {
+  font-family: "font-awsome";
+  font-size: 18px;
+  color: var(--g-color-2);
+  line-height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: normal;
+}
+
+
+/*------------------ Feature Banner ---------------*/
+.feature-banner .opacity{
+  padding: 54px 0 65px 0;
+}
+
+/*-------------------- Testimonial Slider ------------------*/
+
+/*----------------------- Our Team -----------------*/
+
+/*------------------ Theme Counter -------------------*/
+
+/*------------------ Free Consultation -----------------*/
+.consultation-form .img-box img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border-radius: 5px 0 0 5px;
+}
+@media (max-width: 575px) {
+  .consultation-form .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .consultation-form .img-box {
+    height: 100%;
+  }
+
+  .consultation-form .img-box img {
+    width: -webkit-fill-available;
+    height: 100%;
+  }
+}
+/*------------------- Partner Slider ------------------*/
+
+/*---------------------- Theme footer one ------------------*/
+
+/*---------------------- Theme footer Two ------------------*/
+.theme-footer-two {
+  background: var(--b-color-2);
+  text-align: left;
+}
+.theme-footer-two .logo img {
+  width: 145px;
+  margin: 20px 0 15px 0;
+}
+.theme-footer-two .footer-gallery a {
+  color: #9ca6bf;
+}
+.theme-footer-two .top-footer .contact-widget .ex-plore ul li i{
+  font-size: 9px
+}
+.theme-footer-two .top-footer .contact-widget .ex-plore ul li a:hover{
+  color: var(--g-color-2);
+}
+.theme-footer-two .top-footer .contact-widget ul li a:hover{
+  color: var(--g-color-2);
+}
+.scroll-top{
+  background-color: var(--b-color-3);
+}.scroll-top i:hover{
+  color: var(--g-color-2);
+}
+.social-icon i:hover{
+  color: #9ca6bf;
+}
+.social-icon i:hover{
+  color: var(--g-color-2);
+}
+/*----------------- CallOut Banner  --------------*/
+
+/*------------------------- Our Solution -------------------*/
+
+/*------------------- About Company Stye Two -------------------*/
+
+/*----------------------- Our Case --------------------*/
+
+/*------------------- Faq Section -------------------*/
+
+/*------------------ Why Choose us -----------------*/
+
+/*------------------ Short Banner ------------------*/
+
+/*----------------- Latest News ------------------- */
+
+/*------------------- Google Map ---------------------*/
+
+/*---------------------- Theme Inner Banner -----------------*/
+
+/*------------------- Why WE Best -------------------*/
+
+/*---------------- Core Values ----------------*/
+.core-values .single-value-block .text .card-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.core-values .single-value-block .text .read-more {
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 12px;
+}
+.core-values .single-value-block .text .read-more:hover {
+  color: var(--g-color-2);
+}
+.core-values {
+  background: none;
+}
+/*--------------------- Theme Sidebar One ----------------------*/
+
+/*--------------------- Service Details ----------------------*/
+.service-style-one .single-service .text{
+  height: 120px;
+}
+.service-details .service-title {
+  margin: 25px 0 20px 0;
+}
+.service-details .tests ul {
+  padding-left: 12px;
+}
+.service-details .tests ul li {
+  line-height: 34px;
+  font-style: italic;
+  padding-left: 18px;
+  position: relative;
+}
+.service-details .tests li:before {
+  content: "";
+  font-family: "font-awesome";
+  font-size: 12px;
+  color: var(--g-color-2);
+  line-height: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: 700;
+}
+.service-details .tests ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+@media (max-width: 768px) {
+  .service-details .tests ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+@media (max-width: 992px) {
+  .service-details .theme-sidebar-one {
+    display: none;
+  }
+}
+.theme-sidebar-one .sidebar-brochures ul{
+  background-color: var(--b-color-2);
+}
+.service-style-one .single-service .text h5{
+  padding-bottom: 2px;
+}
+.theme-sidebar-one .sidebar-brochures ul li a:hover{
+  color: var(--g-color-2);
+}
+/*---------------- Project Details ---------------*/
+
+/*---------------------- Blog Sidebar ---------------------*/
+
+/*------------------- Blog Details ---------------*/
+
+/*---------------- Contact Us ----------------*/
+
+/*======================= Form Validation ===================*/
+
+/*------------------- Compnay Branch Address ----------------*/
+.branch-address .wrapper p a {
+  font-family: 'Source Sans Pro';
+}
+.branch-address .wrapper p a:hover {
+  color: var(--g-color-2);
+}
+.branch-address .wrapper p i{
+  color: var(--g-color-2);
+  font-size: 24px;
+}
+
+/*--------------------- Shop Page --------------------*/
+
+/*------------------ Shop Details ------------------*/
+
+/*---------------------- Faq Page ------------------*/
+
+/*----------------------------- Error Page --------------------------*/

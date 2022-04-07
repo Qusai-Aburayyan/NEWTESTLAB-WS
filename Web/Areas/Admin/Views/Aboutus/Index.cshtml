@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Core.Entites.Aboutus.Aboutus>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content container">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h4>Quality Policy Control Panel</h4>
+            </div>
+            <div class="card-body">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ImageURL)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.VisionMissionText)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Para1)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Para2)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.QPParagraph)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="~/images/aboutus/@item.ImageURL" class="img-thumbnail" />
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.VisionMissionText)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Para1)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Para2)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.QPParagraph)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit"></i></a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id"><i class="far fa-eye"></i></a> |
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

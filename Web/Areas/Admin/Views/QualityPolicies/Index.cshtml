@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Core.Entites.Aboutus.QualityPolicy>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content container">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h4>Quality Policy Control Panel</h4>
+            </div>
+            <div class="card-body">
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Point)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.AddedDate)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Point)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.AddedDate)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit"></i></a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id"><i class="far fa-eye"></i></a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <hr />
+                <p class=" d-flex justify-content-end">
+                    <a class="btn btn-dark d-flex " asp-action="Create">Create New</a>
+                </p>
+
+
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

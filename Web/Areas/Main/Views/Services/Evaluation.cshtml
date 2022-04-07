@@ -1,0 +1,65 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/structural-evaluation/structural-evaluation.jpg" alt="service-image" class="cover-img" />
+                    <h3 class="main-title">Structural Evaluation for Existing Buildings</h3>
+                    <p>
+                        Starting with virtuall assesment to anlayzing data and prepare an individual case designs, We offer cost-effective and reliable destructive and non-destructive testing solutions to assess existing structures' structural and durability performance.
+                    </p>
+                    <p>
+                        Our solutions can be used to determine strength, carry out comparative quality surveys, examine localized integrity, assess potential durability, identify causes of failure and deterioration, and select the as-built details of materials and structural components to prepare a comrehinsive reprort about the building situation.
+                    </p>
+                    <div class="tests">
+                        <p>Techniques available include the following : </p>
+                        <ul class="columns" data-column="2">
+                            <li>In-situ strength includes structural load testing  </li>
+                            <li>Rebound hammer (Schmidt Hammer test)</li>
+                            <li>Non-destructive Ultrasonic testing</li>
+                            <li>Rebar Scaner</li>
+                            <li>Core drilling and testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.service-content -->
+            </div>
+            <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+
+                <div class="sidebar-box service-categories">
+                    <h5 class="title">Our Services</h5>
+                    <ul>
+                        @await Component.InvokeAsync("Services")
+                    </ul>
+                </div>
+                <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div>
+                <!-- /.sidebar-brochures -->
+
+            </div>
+            <!-- /.theme-sidebar-one -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.service-details -->

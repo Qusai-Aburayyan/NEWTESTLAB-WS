@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Core.Entites.SpecialService.SpecialService>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="content-wrapper">
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">NEWTESTLAB Admin Panel</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+
+            <!-- Main row -->
+            <div class="row">
+                <!-- Left col -->
+                <section class="col-12 connectedSortable">
+                    <!-- Custom tabs (Charts with tabs)-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-title">Services Control Panel</h1>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ImageURL)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Title)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Content)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ActionName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.AddedDate)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <img class="img-thumbnail" src="~/images/specialServices/@item.ImageURL" />
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Title)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Content)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.ActionName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.AddedDate)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit"></i></a> |
+                                                <a asp-action="Details" asp-route-id="@item.Id"><i class="far fa-eye"></i></a> |
+                                                <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <hr />
+                            <p class=" d-flex justify-content-end">
+                                <a class="btn btn-dark d-flex " asp-action="Create">Create New</a>
+                            </p>
+
+
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </section>
+                <!-- /.Left col -->
+            </div>
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>

@@ -1,0 +1,172 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "index";
+}
+
+
+
+
+<!--
+==============================================
+    Theme Main Banner
+==============================================
+-->
+<div class="section-spacing">
+    <div id="theme-main-banner" class="banner-one">
+        @foreach (var slide in Model.Slides)
+        {
+            <div class="" data-src="@Url.Content("~/images/home/slide/" + slide.SlideURL)">
+                <div class="camera_caption">
+                    <div class="container">
+                        <h1 class="wow fadeInUp animated" data-wow-delay="0.2s">@slide.Text1 <br>@slide.Text2</h1>
+                        <a asp-area="Main" asp-action="Index" asp-controller="Contactus" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div> <!-- /#theme-main-banner -->
+</div>
+
+<!--
+=============================================
+    About Company
+==============================================
+-->
+<div class="about-compnay section-spacing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12"><img src="~/images/aboutus/@Model.Aboutus.ImageURL" alt=""></div>
+            <div class="col-lg-6 col-12">
+                <div class="text">
+                    <div class="theme-title-one">
+                        <h2>About Our Company</h2>
+                        <div class="about-text">
+                            <p class="card-text">
+                                @Model.Aboutus.Para1
+                            </p>
+                        </div>
+                    </div> <!-- /.theme-title-one -->
+                    <ul class="mission-goal clearfix">
+                        <li>
+                            <i class="icon flaticon-star"></i>
+                            <h4>Vision</h4>
+                        </li>
+                        <li>
+                            <i class="icon flaticon-medal"></i>
+                            <h4>Missions</h4>
+                        </li>
+                        <li>
+                            <i class="icon flaticon-target"></i>
+                            <h4>Goals</h4>
+                        </li>
+                    </ul> <!-- /.mission-goal -->
+                </div> <!-- /.text -->
+            </div> <!-- /.col- -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.about-compnay -->
+<!--
+=============================================
+    Feature Banner
+==============================================
+-->
+<div class="feature-banner">
+    <div class="opacity">
+        <div class="container">
+            <h2>We provide high quality services &amp; innovative solutions for the realiable growth</h2>
+        </div> <!-- /.container -->
+    </div> <!-- /.opacity -->
+</div> <!-- /.feature-banner -->
+<!--
+=============================================
+    Core Values
+==============================================
+-->
+<div class="core-values">
+    <div class="container">
+        <div class="theme-title-one">
+            <h2>SERVICES</h2>
+        </div> <!-- /.theme-title-one -->
+        <div class="wrapper">
+            <div class="core-value-slider">
+
+                @foreach (var service in Model.Services)
+                {
+                    <div class="item">
+                        <div class="single-value-block">
+                            <div class="image-box">
+                                <img src="~/images/service/@service.ImageURL" alt="">
+                                <div class="overlay"><a asp-area="Main" asp-action="@service.ActionName" asp-controller="Services" class="theme-button-one">READ MORE</a></div>
+                            </div> <!-- /.image-box -->
+                            <div class="text">
+                                <h5><a asp-area="Main" asp-action="@service.ActionName" asp-controller="Services">@service.Title</a></h5>
+                                <div class="card-text">
+                                    <p>
+                                        @service.Content
+                                    </p>
+                                </div> <!-- /.card-text -->
+                                <a asp-area="Main" asp-action="@service.ActionName" asp-controller="Services" class="read-more">READ MORE</a>
+                            </div> <!-- /.text -->
+                        </div> <!-- /.single-value-block -->
+                    </div> <!-- /.col- -->
+                }
+
+
+            </div> <!-- /.core-value-slider -->
+        </div> <!-- /.wrapper -->
+    </div> <!-- /.container -->
+</div> <!-- /.core-values -->
+<!--
+
+
+=============================================
+    Feature Banner
+==============================================
+-->
+<div class="feature-banner">
+    <div class="opacity">
+        <div class="container">
+            <h2>We provide high quality services &amp; innovative solutions for the realiable growth</h2>
+        </div> <!-- /.container -->
+    </div> <!-- /.opacity -->
+</div> <!-- /.feature-banner -->
+<!--
+=============================================
+    Core Values
+==============================================
+-->
+<div class="core-values">
+    <div class="container">
+        <div class="theme-title-one">
+            <h2>SPECIAL SERVICES</h2>
+        </div> <!-- /.theme-title-one -->
+        <div class="wrapper">
+            <div class="core-value-slider">
+
+                @foreach (var specialService in Model.SpecialServices)
+                {
+                    <div class="item">
+                        <div class="single-value-block">
+                            <div class="image-box">
+                                <img src="~/images/specialServices/@specialService.ImageURL" alt="">
+                                <div class="overlay"><a asp-area="Main" asp-action="@specialService.ActionName" asp-controller="SpecialServices" class="theme-button-one">READ MORE</a></div>
+                            </div> <!-- /.image-box -->
+                            <div class="text">
+                                <h5><a asp-area="Main" asp-action="@specialService.ActionName" asp-controller="SpecialServices">@specialService.Title</a></h5>
+                                <div class="card-text">
+                                    <p>
+                                        @specialService.Content
+                                    </p>
+                                </div> <!-- /.card-text -->
+                                <a asp-area="Main" asp-action="@specialService.ActionName" asp-controller="SpecialServices" class="read-more">READ MORE</a>
+                            </div> <!-- /.text -->
+                        </div> <!-- /.single-value-block -->
+                    </div> <!-- /.col- -->
+                }
+
+            </div> <!-- /.core-value-slider -->
+        </div> <!-- /.wrapper -->
+    </div> <!-- /.container -->
+</div> <!-- /.core-values -->
+

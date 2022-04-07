@@ -1,0 +1,12 @@
+.hold-transition .card button{
+    background-color:#2a3a52;
+    border: none;
+}
+.hold-transition .card button:hover{
+    background-color: #001138;
+    color: #c1a16c;
+}
+.img-thumbnail{
+    width:auto;
+    height:200px;
+}

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Core.Entites.WebSettings.WebSettings>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="content-wrapper">
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">NEWTESTLAB Admin Panel</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+
+            <!-- Main row -->
+            <div class="row">
+                <!-- Left col -->
+                <section class="col-12 connectedSortable">
+                    <!-- Custom tabs (Charts with tabs)-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-title">Services Control Panel</h1>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+
+                            <p>
+                                <a asp-action="Create">Create New</a>
+                            </p>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LogoURL)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FotterLogoURL)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <img class="img-thumbnail" src="~/images/home/webSetting/@item.LogoURL" />
+                                            </td>                                            
+                                            <td>
+                                                <img class="img-thumbnail" src="~/images/home/webSetting//@item.FotterLogoURL" />
+                                            </td>                                         
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>                                        
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Adress)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.EmailAdress)
+                                        </th>                                     
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.WhatsApp)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Phone)
+                                        </th>                                        
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FotterText)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>                                            
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Adress)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LinkedinAdress)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.WhatsApp)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Phone)
+                                            </td>                                            
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FotterText)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+
+
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </section>
+                <!-- /.Left col -->
+            </div>
+            <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+

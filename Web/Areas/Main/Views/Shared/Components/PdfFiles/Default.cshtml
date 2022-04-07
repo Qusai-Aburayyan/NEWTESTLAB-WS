@@ -1,0 +1,6 @@
+﻿@model IEnumerable<Core.Entites.WebSettings.PdfFile>
+
+@foreach (var file in Model)
+{
+    <li><a href="@file.FilePath"><i class="bi bi-file-earmark-pdf"></i>@file.FileName</a></li>
+}

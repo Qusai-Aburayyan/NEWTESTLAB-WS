@@ -1,0 +1,64 @@
+﻿<!--
+ =============================================
+     Theme Inner Banner
+ ==============================================
+ -->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/drinking-water-tests/drinking-water-tests.jpg" alt="service-image" class="cover-img" />
+                    <h3 class="main-title">Drinking Water Testing & Analysis</h3>
+                    <p>
+                        Our Engineers conduct routine drinking water testing to ensure potable water is safe for human consumption and make certain that water quality meets and fulfills our clients' legal requirements.
+                    </p>
+                    <p>
+                        NEWTEST ensures that water pipeline systems are monitored and tested according to Palestinian Specifications (PS) and country legislation. We provide routine drinking water testing for a variety of contaminants and provide fast and accurate reports for environmental consultants, municipalities and private businesses.
+                    </p>
+
+                    <div class="tests">
+                        <p>Our laboratory conducts water testing for: </p>
+                        <ul class="columns" data-column="2">
+                            <li>Chloride Percentage in water pipelines after disinfection operations</li>
+                            <li>Water PH level  </li>
+                            <li>M- Endo agar testing water for coliforms </li>
+                            <li>M fecal agar for the detection and enumeration of fecal coliforms</li>
+                            <li>The proportion of salts in the water (TDS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.service-content -->
+            </div>
+            <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h5 class="title">Our Services</h5>
+                    <ul>
+                        @await Component.InvokeAsync("Services")
+                    </ul>
+                </div>
+                <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div>
+                <!-- /.sidebar-brochures -->
+            </div>
+            <!-- /.theme-sidebar-one -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.service-details -->

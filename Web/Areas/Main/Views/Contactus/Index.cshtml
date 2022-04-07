@@ -1,0 +1,91 @@
+﻿@model Core.Entites.Contactus.Contactus
+
+<div class="section-spacing"></div>
+
+<!--
+=====================================================
+    Free Consultation
+=====================================================
+-->
+<div class="consultation-form section-spacing">
+    <div class="container">
+        <div class="theme-title-one">
+            <h2>Contact Us</h2>
+            <p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p>
+        </div> <!-- /.theme-title-one -->
+        <div class="clearfix main-content no-gutters row">
+            <div class=" col-xl-6 col-lg-5 col-12 img-box"><img src="~/images/home/contact.jpg" alt="contact-image"></div>
+            <div class="col-xl-6 col-lg-7 col-12">
+                <div class="form-wrapper">
+
+                    <form asp-action="SaveContact" method="post" class="theme-form-one">
+                        <div class="row">
+                            <div class="col-md-6"><input asp-for="MessageTitle" type="text" placeholder="Message Title *"></div>
+                            <div class="col-md-6"><input asp-for="Email" type="email" placeholder="Email *"></div>
+                            <div class="col-md-6"><input asp-for="Name" type="text" placeholder="Name *"></div>
+                            <div class="col-md-6"><input asp-for="Phone" type="text" placeholder="Phone *"></div>
+                            <div class="col-12"><textarea asp-for="MessageContent" placeholder="Message"></textarea></div>
+                        </div> <!-- /.row -->
+                        <button type="submit" class="theme-button-one">Send Message</button>
+                    </form>
+
+                </div> <!-- /.form-wrapper -->
+            </div> <!-- /.col- -->
+        </div> <!-- /.main-content -->
+    </div> <!-- /.container -->
+</div> <!-- /.consultation-form -->
+<!--
+=============================================
+    Compnay Branch Address
+==============================================
+-->
+<div class="branch-address">
+    <div class="container">
+        <div class="row">
+            <div class="address-slider">
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Adress</h6>
+                        <p><i class="fas fa-map-marker-alt"></i> Abu Al-Halawa Crossraod, Harat Al-Shaikh, Hebron</p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Email</h6>
+                        <p><i class="far fa-envelope"></i> info@newtestlab.com</p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Whatsapp</h6>
+                        <p><i class="fab fa-whatsapp"></i> +970 598 555 363</p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Fax</h6>
+                        <p><i class="fas fa-phone-alt"></i> +970 222 15 333</p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Facebook</h6>
+                        <p><i class="fab fa-facebook"></i><a href="https://www.facebook.com/NewtestGeo"> NewtestLab</a> </p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Instagram</h6>
+                        <p><i class="fab fa-instagram"></i><a href="https://www.facebook.com/NewtestGeo"> NewtestLab</a> </p>
+                    </div> <!-- /.wrapper -->
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <h6>Website</h6>
+                        <p><i class="fas fa-globe-asia"></i><a href="https://www.newtestlab.com"> www.newtestlab.com</a></p>
+                    </div> <!-- /.wrapper -->
+                </div>
+            </div> <!-- /.address-slider -->
+        </div>
+    </div> <!-- /.container -->
+</div> <!-- /.branch-address -->

@@ -1,0 +1,57 @@
+﻿@model Core.Entites.Aboutus.QualityPolicy
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content container">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h4>Edit Quality Policy Point</h4>
+            </div>
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Point" class="control-label"></label>
+                                <input asp-for="Point" class="form-control" />
+                                <span asp-validation-for="Point" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="AddedDate" class="control-label"></label>
+                                <input asp-for="AddedDate" class="form-control" />
+                                <span asp-validation-for="AddedDate" class="text-danger"></span>
+                            </div>
+                            <input type="hidden" asp-for="Id" />
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-outline-success" />
+                                <a class="btn btn-outline-secondary" asp-action="Index"><i class="far fa-share-square"></i>Back to ist</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

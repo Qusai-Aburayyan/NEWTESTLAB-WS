@@ -1,0 +1,51 @@
+﻿@inject SignInManager<ApplicationUser> signInManager;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#061948">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#061948">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+    <title>NEWTESTLAB</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="~/images/home/webSetting/icon.png">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <link rel="stylesheet" href="~/fonts/font-awesome/css/all.min.css">
+    <!-- Web style sheets -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="~/css/adminlte.css">
+    <!-- Admin Panel Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="~/css/admin-panel.css">
+    <!-- Admin Panel Style Sheet -->
+    <link rel="stylesheet" href="~/css/admin-panel.css">
+</head>
+<body>
+    <div class="hold-transition sidebar-mini">
+
+        @RenderBody()
+
+    </div>
+    <!-- jQuery -->
+    <script src="~/vendor/jquery.2.2.3.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/vendor/bootstrap/css/bootstrap.min.css"></script>
+    <!-- Admin-Panel-->
+    <script src="~/js/adminlte.min.js"></script>
+    @if (IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts", required: true);
+    }
+</body>
+</html>

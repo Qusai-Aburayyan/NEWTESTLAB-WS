@@ -1,0 +1,72 @@
+﻿@model Core.Entites.Slide.Slide
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content container">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h4>Delete Quality Policy Point</h4>
+            </div>
+            <div class="card-body">
+
+                <div>
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.SlideURL)
+                        </dt>
+                        <dd class="col-sm-10">
+                            <img class="img-thumbnail" src="~/images/home/slide/@Model.SlideURL" />
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Text1)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Text1)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Text2)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Text2)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.AddedDate)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.AddedDate)
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
+                        <a class="btn btn-outline-secondary" asp-action="Index"><i class="far fa-share-square"></i>Back to List</a>
+                    </form>
+                </div>
+
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+

@@ -1,0 +1,50 @@
+﻿<!--
+=============================================
+    Theme Inner Banner
+==============================================
+-->
+<div class="theme-inner-banner section-spacing">
+</div> <!-- /.theme-inner-banner -->
+<!--
+=============================================
+    Service Details
+==============================================
+-->
+<div class="service-details section-spacing">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-9 col-lg-8 col-12">
+                <div class="service-content">
+                    <img src="~/images/specialServices/UTM/utm-img-01.jpg" alt="" class="cover-img">
+                    <h3 class="main-title">Universal Automatic Tensile Testing Machines (Steel)</h3>
+                    <p>
+                        While the tensile strength is an extremely important property for reinforcing Steel bars that used in concrete construction.
+                    </p>
+                    <p>
+                        Our tensile testing services allow us to deliver critical information relating to the strength, stiffness, and ductility of steel rebars by Utilizing the most sophisticated machine in the world, Universal Automatic Tensile Testing system (UTM) which is suitable to test metallic round and flat Rebars to report the ultimate tensile strength, Bending and Rebinding strength. And from these Results we can determine the following properties: maximum elongation, Young's modulus, yield strength and fracture strength.
+                    </p>
+
+                </div> <!-- /.service-content -->
+            </div> <!-- /.col- -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one">
+                <div class="sidebar-box service-categories">
+                    <h3 class="title">Special Services</h3>
+                    <ul>
+                        @await Component.InvokeAsync("SpecialServices")
+                    </ul>
+                </div> <!-- /.service-categories -->
+                <div class="sidebar-box sidebar-brochures">
+                    <h5 class="title">Brochures</h5>
+                    <ul>
+                        @await Component.InvokeAsync("PdfFiles")
+                    </ul>
+                </div> <!-- /.sidebar-brochures -->
+
+
+
+            </div> <!-- /.theme-sidebar-one -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.service-details -->
